@@ -28,7 +28,7 @@ These notes are organized by topic. Each file is a self-contained reference for 
 - [Windows Administration](Windows/windows-administration.md) — CLI, PowerShell, icacls, firewall, PsExec, Task Scheduler, Event Viewer
 ### Offensive Security
 - [Reconnaissance & Enumeration](Offensive Security/reconnaissance-enumeration.md) — nmap, enum4linux, JAWS, searchsploit
-- [Exploitation](Offensive_Security/exploitation.md) — Metasploit, MSFVenom, memory corruption, zero-day concepts
+- [Exploitation](Offensive.Security/exploitation.md) — Metasploit, MSFVenom, memory corruption, zero-day concepts
 - [Post-Exploitation & Pivoting](Offensive Security/post-exploitation-pivoting.md) — PEASS-ng, Chisel, reverse shells, iptables pivoting
 ### Labs
 - [Labs](./labs/) — Hands-on lab walkthroughs (In Progress)
