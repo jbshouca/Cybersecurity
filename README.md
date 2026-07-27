@@ -11,7 +11,7 @@ These notes are organized by topic. Each file is a self-contained reference for 
 ## Contents
  
 ### Foundations
-- [Linux Fundamentals](./linux-fundamentals.md) — Shell basics, bash scripting, cron, common commands
+- [Linux Fundamentals](Foundations/linux-fundamentals.md) — Shell basics, bash scripting, cron, common commands
 - [Python for Security](./python-for-security.md) — Python for scripting, port scanning, reverse shells, log parsing, packet crafting
 - [Reference](./reference.md) — OSI model, Cyber Kill Chain, Linux file structure, tmux, telnet, cellular
 ### Utility
