@@ -31,7 +31,7 @@ These notes are organized by topic. Each file is a self-contained reference for 
 - [Exploitation](Offensive.Security/exploitation.md) — Metasploit, MSFVenom, memory corruption, zero-day concepts
 - [Post-Exploitation & Pivoting](Offensive Security/post-exploitation-pivoting.md) — PEASS-ng, Chisel, reverse shells, iptables pivoting
 ### Labs
-- [Labs](./labs/) — Hands-on lab walkthroughs (In Progress)
+- [Labs](Labs/readme.md/) — Hands-on lab walkthroughs (In Progress)
 ---
 
 ## Recommended reading order (if new)
