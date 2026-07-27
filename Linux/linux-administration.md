@@ -303,15 +303,6 @@ pkill -f "python3 myscript.py"
 sudo lsof -i :8080
 ```
  
-### Signal cheat sheet
- 
-| Signal | Number | Behavior |
-|---|---|---|
-| SIGTERM | 15 | Default. Asks nicely. Process can clean up. Try first. |
-| SIGKILL | 9 | Kernel kills immediately. No cleanup. Last resort. |
-| SIGHUP | 1 | Many daemons treat as "reload config" |
-| SIGINT | 2 | Same as Ctrl+C |
- 
 ---
  
 ## Logged in users and open files
