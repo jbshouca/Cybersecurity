@@ -1,6 +1,6 @@
 # Cybersecurity Notes
  
-Personal reference and study notes covering Linux and Windows administration, networking, reconnaissance, exploitation, and post-exploitation techniques.
+Personal reference and study notes covering Linux and Windows administration, networking, wireless, reconnaissance, exploitation, and post-exploitation techniques.
  
 These notes are organized by topic. Each file is a self-contained reference for that area — commands, concepts, and workflows I've used or want to remember.
  
@@ -12,12 +12,16 @@ These notes are organized by topic. Each file is a self-contained reference for 
  
 ### Foundations
 - [Linux Fundamentals](./linux-fundamentals.md) — Shell basics, bash scripting, cron, common commands
-- [Reference](./reference.md) — OSI model, Cyber Kill Chain, Linux file structure, regex, tmux, telnet, cellular
+- [Python for Security](./python-for-security.md) — Python for scripting, port scanning, reverse shells, log parsing, packet crafting
+- [Reference](./reference.md) — OSI model, Cyber Kill Chain, Linux file structure, tmux, telnet, cellular
+### Utility
+- [Regex](./regex.md) — Pattern language used across grep, Python, sed/awk, SIEMs
 ### Linux
 - [Linux Administration](./linux-administration.md) — Permissions, packages, systemd, logs, processes
 - [Linux Storage & Boot](./linux-storage-and-boot.md) — Partitioning, mounting, fstab, fsck, chroot, GRUB, venv
 ### Networking
 - [Networking Basics](./networking-basics.md) — Interfaces, IP, ping/traceroute/mtr, netstat, netcat
+- [Wireless (802.11)](./wireless-802-11.md) — Wi-Fi standards, WPA/WPA2/WPA3, aircrack-ng, handshake capture, PMKID, evil twin
 - [SSH & Tunneling](./ssh-and-tunneling.md) — SSH config, jump hosts, local/remote/dynamic forwarding, WireGuard
 - [Firewalls, tcpdump & Logging](./firewalls-tcpdump-logging.md) — iptables, tcpdump, rsyslog, IP forwarding
 ### Windows
@@ -27,26 +31,20 @@ These notes are organized by topic. Each file is a self-contained reference for 
 - [Exploitation](./exploitation.md) — Metasploit, MSFVenom, memory corruption, zero-day concepts
 - [Post-Exploitation & Pivoting](./post-exploitation-pivoting.md) — PEASS-ng, Chisel, reverse shells, iptables pivoting
 ### Labs
-- [Labs](./labs/) — Hands-on lab walkthroughs
+- [Labs](./labs/) — Hands-on lab walkthroughs (in progress)
 ---
  
-## How this repo is organized
- 
-Each topic file follows a consistent structure:
- 
-- **Concept** — what it is and why it matters
-- **Commands / syntax** — the actual usage, in code blocks
-- **Workflow / examples** — how it fits into real tasks
-- **Gotchas** — things that trip me up
 ## Recommended reading order (if new)
  
 1. `linux-fundamentals.md`
 2. `linux-administration.md`
-3. `networking-basics.md`
-4. `ssh-and-tunneling.md`
-5. `firewalls-tcpdump-logging.md`
-6. `reconnaissance-enumeration.md`
-7. `exploitation.md`
-8. `post-exploitation-pivoting.md`
+3. `python-for-security.md`
+4. `regex.md`
+5. `networking-basics.md`
+6. `ssh-and-tunneling.md`
+7. `firewalls-tcpdump-logging.md`
+8. `wireless-802-11.md`
+9. `reconnaissance-enumeration.md`
+10. `exploitation.md`
+11. `post-exploitation-pivoting.md`
 ---
- 
