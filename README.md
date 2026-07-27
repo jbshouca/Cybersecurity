@@ -12,24 +12,24 @@ These notes are organized by topic. Each file is a self-contained reference for 
  
 ### Foundations
 - [Linux Fundamentals](Foundations/linux-fundamentals.md) — Shell basics, bash scripting, cron, common commands
-- [Python for Security](./python-for-security.md) — Python for scripting, port scanning, reverse shells, log parsing, packet crafting
-- [Reference](./reference.md) — OSI model, Cyber Kill Chain, Linux file structure, tmux, telnet, cellular
+- [Python for Security](Foundations/python-for-security.md) — Python for scripting, port scanning, reverse shells, log parsing, packet crafting
+- [Reference](Foundations/reference.md) — OSI model, Cyber Kill Chain, Linux file structure, tmux, telnet, cellular
 ### Utility
-- [Regex](./regex.md) — Pattern language used across grep, Python, sed/awk, SIEMs
+- [Regex](Utility/regex.md) — Pattern language used across grep, Python, sed/awk, SIEMs
 ### Linux
-- [Linux Administration](./linux-administration.md) — Permissions, packages, systemd, logs, processes
-- [Linux Storage & Boot](./linux-storage-and-boot.md) — Partitioning, mounting, fstab, fsck, chroot, GRUB, venv
+- [Linux Administration](Linux/linux-administration.md) — Permissions, packages, systemd, logs, processes
+- [Linux Storage & Boot](Linux/linux-storage-and-boot.md) — Partitioning, mounting, fstab, fsck, chroot, GRUB, venv
 ### Networking
-- [Networking Basics](./networking-basics.md) — Interfaces, IP, ping/traceroute/mtr, netstat, netcat
-- [Wireless (802.11)](./wireless-802-11.md) — Wi-Fi standards, WPA/WPA2/WPA3, aircrack-ng, handshake capture, PMKID, evil twin
-- [SSH & Tunneling](./ssh-and-tunneling.md) — SSH config, jump hosts, local/remote/dynamic forwarding, WireGuard
-- [Firewalls, tcpdump & Logging](./firewalls-tcpdump-logging.md) — iptables, tcpdump, rsyslog, IP forwarding
+- [Networking Basics](Networking/networking-basics.md) — Interfaces, IP, ping/traceroute/mtr, netstat, netcat
+- [Wireless (802.11)](Networking/wireless-802-11.md) — Wi-Fi standards, WPA/WPA2/WPA3, aircrack-ng, handshake capture, PMKID, evil twin
+- [SSH & Tunneling](Networking/ssh-and-tunneling.md) — SSH config, jump hosts, local/remote/dynamic forwarding, WireGuard
+- [Firewalls, tcpdump & Logging](Networking/firewalls-tcpdump-logging.md) — iptables, tcpdump, rsyslog, IP forwarding
 ### Windows
-- [Windows Administration](./windows-administration.md) — CLI, PowerShell, icacls, firewall, PsExec, Task Scheduler, Event Viewer
+- [Windows Administration](Windows/windows-administration.md) — CLI, PowerShell, icacls, firewall, PsExec, Task Scheduler, Event Viewer
 ### Offensive Security
-- [Reconnaissance & Enumeration](./reconnaissance-enumeration.md) — nmap, enum4linux, JAWS, searchsploit
-- [Exploitation](./exploitation.md) — Metasploit, MSFVenom, memory corruption, zero-day concepts
-- [Post-Exploitation & Pivoting](./post-exploitation-pivoting.md) — PEASS-ng, Chisel, reverse shells, iptables pivoting
+- [Reconnaissance & Enumeration](Offensive Security/reconnaissance-enumeration.md) — nmap, enum4linux, JAWS, searchsploit
+- [Exploitation](Offensive_Security/exploitation.md) — Metasploit, MSFVenom, memory corruption, zero-day concepts
+- [Post-Exploitation & Pivoting](Offensive Security/post-exploitation-pivoting.md) — PEASS-ng, Chisel, reverse shells, iptables pivoting
 ### Labs
 - [Labs](./labs/) — Hands-on lab walkthroughs (In Progress)
 ---
