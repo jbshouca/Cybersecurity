@@ -152,8 +152,4 @@ Cron runs commands or scripts on a schedule. Edit your crontab with `crontab -e`
 | `@reboot /path/to/script.sh` | Run at boot |
  
 ---
- 
-## Personal project ideas
- 
-1. **nmap command helper** — Bash script that prints the most commonly needed nmap commands based on user input for IPs and Ports.
-2. **File/directory existence checker** — Script that checks if a directory exists, and if it does, checks whether a specific file exists within it. Creates the file if missing. Prints status for each check.
+
