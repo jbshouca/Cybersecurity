@@ -32,6 +32,8 @@ These notes are organized by topic. Each file is a self-contained reference for 
 - [Post-Exploitation & Pivoting](Offensive%20Security/post-exploitation-pivoting.md) — PEASS-ng, Chisel, reverse shells, iptables pivoting
 ### Labs
 - [Labs](Labs/readme.md/) — Hands-on lab walkthroughs (In Progress)
+### Misc
+- [Misc](Misc/) - Original documentation and notes during my journey. Prior to compliation via AI. Includes some of my lab practicals. 
 ---
 
 ## Recommended reading order (if new)
