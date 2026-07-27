@@ -31,9 +31,9 @@ These notes are organized by topic. Each file is a self-contained reference for 
 - [Exploitation](./exploitation.md) — Metasploit, MSFVenom, memory corruption, zero-day concepts
 - [Post-Exploitation & Pivoting](./post-exploitation-pivoting.md) — PEASS-ng, Chisel, reverse shells, iptables pivoting
 ### Labs
-- [Labs](./labs/) — Hands-on lab walkthroughs (in progress)
+- [Labs](./labs/) — Hands-on lab walkthroughs (In Progress)
 ---
- 
+
 ## Recommended reading order (if new)
  
 1. `linux-fundamentals.md`
