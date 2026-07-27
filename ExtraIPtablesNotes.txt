@@ -1,0 +1,87 @@
+Allow machine to talk to itself on loopback:
+sudo iptables -A INPUT -i lo -j ACCEPT
+
+Allow established connections that go out to come back in. IE requests to external servers for resources like with sudo apt update:
+sudo iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+
+Allow ICMP:
+sudo iptables -A INPUT -p icmp -j ACCEPT
+
+Allow SSH:
+sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+
+Allow SSH from a specific IP:
+sudo iptables -A INPUT -p tcp --dport 22 -s 192.168.244.131 -j ACCEPT
+
+Log everything else coming IN:
+sudo iptables -A INPUT -j LOG --log-prefix "LOG: " --log-level 4
+	- log-prefix starts each log entry with said text
+	- log level 4 logs a warning
+
+Implicit deny POLICY to drop anything else that doesn't match rules above:
+sudo iptables -P INPUT DROP
+
+
+OUTPUT rules (What's allowed to leave)
+
+Block reverse SSH tunnels to a specific host
+
+sudo iptables -A OUTPUT -p tcp --dport 22 -d 192.168.244.129 -j LOG --log-prefix "LOG-Dropped: " --log-level 4
+sudo iptables -A OUTPUT -p tcp --dport 22 -d 192.168.244.129 -j DROP
+
+Allow all other outbound traffic
+
+sudo iptables -P OUTPUT ACCEPT
+
+
+
+Forward rules (What passes through this machine to another network)
+- IP forwarding needs to be enabled: 
+- On Debian persistent forwarding (saves on reboot) needs to be done in /etc/sysctl.d/
+- Create a file for forwarding: touch /etc/sysctl.d/99-ip-forwarding.conf
+- echo "net.ipv4.ip_forward = 1" | sudo tee /etc/sysctl.d/99-ip-forwarding.conf
+- This will append the echoed line into our file
+- sudo sysctl --system to apply to our current host without rebooting
+
+
+IE you want packets to pass from a WAN facing interface (192.168.244.0/24 network) to a LAN facing interface (172.16.0.0/24 network)
+
+sudo iptables -A FORWARD -s 192.168.244.0/24 -d 172.16.0.0/24 -j ACCEPT
+sudo iptables -A FORWARD -s 172.16.0.0/24 -d 192.168.244.0/24 -j ACCEPT
+
+without these rules even with ip forwarding enabled the packets would be dropped because the default POLICY for the forward table is DROP. 
+
+Log and drop everything else:
+sudo iptables -A FORWARD -j LOG --log-prefix "LOG-FWD: " --log-level 4
+sudo iptables -P FORWARD DROP
+
+
+NAT rule (masquerading)
+
+sudo iptables -t nat -A POSTROUTING -s 192.168.244.0/24 -o ens224 -j MASQUERADE
+	- t nat means use the nat table
+	- A POSTROUTING means apply after routing right before leaving machine
+	- o ens224 means if the packet is leaving via that interface
+	- j Masquerade rewrites the source ip to this machine's ip on ens224
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
