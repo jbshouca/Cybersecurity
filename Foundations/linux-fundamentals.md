@@ -109,7 +109,10 @@ esac
 ```bash
 # Append to a file
 echo "More text." >> output.txt
- 
+
+# Append to a file requiring elevated privileges
+echo 'net.ipv4.ip_forward = 1' | sudo tee -a /etc/sysctl.conf
+
 # Overwrite / create a new file with output
 ls > files.txt
 ```
