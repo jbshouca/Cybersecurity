@@ -50,7 +50,3 @@ Each topic file follows a consistent structure:
 8. `post-exploitation-pivoting.md`
 ---
  
-## Personal projects (in progress)
- 
-- Bash script that prints the most commonly needed nmap commands based on user input for IPs and ports
-- Bash script that checks if a directory exists, and if so checks for a specific file within it — creating the file if missing and reporting status
