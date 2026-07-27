@@ -70,7 +70,6 @@ pip install --upgrade requests
  
 ```bash
 python3 script.py
-python3 script.py arg1 arg2
 ```
  
 Make executable with a shebang and `chmod +x`:
@@ -129,6 +128,9 @@ else:
 # for loop
 for port in [22, 80, 443]:
     print(port)
+
+# for loop to find and mount an iso
+for iso in $(find / -name "*.iso" 2>/dev/null); do sudo mount -o loop "$iso" /mnt/iso
  
 # range
 for i in range(10):        # 0..9
